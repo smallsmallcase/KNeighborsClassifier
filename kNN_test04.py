@@ -78,7 +78,7 @@ def handwritingClassTest2(hwLabels, trainingMat):
         vectorUnderTest = img2vector('testDigits/%s' % (fileNameStr))
         # 获得预测结果
         # classifierResult = classify0(vectorUnderTest, trainingMat, hwLabels, 3)
-        classifierResult = neigh.score(vectorUnderTest, classNumber)
+        classifierResult = neigh.predict(vectorUnderTest)
         print(classifierResult)
         print("分类返回结果为%d\t真实结果为%d" % (classifierResult, classNumber))
         if (classifierResult != classNumber):
