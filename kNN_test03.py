@@ -1,6 +1,6 @@
 # @Time    : 2017/9/19 21:33
 # @Author  : Jalin Hu
-# @File    : d.py
+# @File    : kNN_test03.py
 # @Software: PyCharm
 
 import numpy as np

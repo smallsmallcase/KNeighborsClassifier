@@ -1,6 +1,6 @@
 # @Time    : 2017/9/24 20:31
 # @Author  : Jalin Hu
-# @File    : d.py
+# @File    : kNN_test04.py
 # @Software: PyCharm
 import numpy as np
 import numpy
@@ -79,7 +79,6 @@ def handwritingClassTest2(hwLabels, trainingMat):
         # 获得预测结果
         # classifierResult = classify0(vectorUnderTest, trainingMat, hwLabels, 3)
         classifierResult = neigh.predict(vectorUnderTest)
-        print(classifierResult)
         print("分类返回结果为%d\t真实结果为%d" % (classifierResult, classNumber))
         if (classifierResult != classNumber):
             errorCount += 1.0
